@@ -1,0 +1,85 @@
+/*Elements*/
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    /*font-family: Comic Sans MS;*/
+}
+body {
+    background-color: black;
+    height: 100em;
+}
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, th, td, tr {
+    color: #00FF33;
+    font-size: 24px;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center; 
+}
+th {
+    border: 4px solid #00FF33;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+td {
+    border: 2px solid #00FF33;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*Classes*/
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 95%;
+    margin: 0.5% 2.5%;
+    border: 2px dashed #00FF33;
+    background-color: black;
+}
+.navbar a {
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+.navbutton {
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+}
+.navbutton:hover {
+    background-color: #00FF33;
+    color: black;
+}
+.navbutton span {
+    position: relative;
+    top: 30%;
+}
+.content {
+    margin-top: 7.5%;
+}
+.center {
+    text-align: center;
+}
+.link:hover {
+    color: red;
+}
+.blok {
+    background-color: #00FF33;
+    color: black;
+    font-weight: bold;
+}
+/*ID's*/
+#sitemap {
+    position: fixed;
+    bottom: 10px;
+}
+#sitemap:hover {
+    color: red;
+}
