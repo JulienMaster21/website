@@ -38,19 +38,22 @@ h1 {
 }
 /*Images*/
 .captain {
-    width: 20em;
+    width: 100%;
+    height: auto;
 }
 .emperor {
-    height: 30em;
-    width: 20em;
+    height: auto;
+    width: 100%;
 }
 .de_rede {
-    margin-left: 70vw;
-    width: 45em;
+    width: 30vw;
+    height: auto;
 }
 .memes {
     dankness: maximum;
     spicyness: very spicy;
+    width: 30vw;
+    height: auto;
 }
 .emperormeme {
     animation: grow 10s;
@@ -118,28 +121,40 @@ td {
 }
 .navcontainer {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 36em;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .navbutton {
-    height: 100px;
-    width: 12em;
-    text-align: center;
+    height: 9vh;
+    width: 12vw;
+    min-height: 5em;
+    min-width: 10em;
     text-decoration: none;
     font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbutton_active {
+    height: 9vh;
+    width: 12vw;
+    min-height: 5em;
+    min-width: 10em;
+    text-decoration: none;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00FF33;
+    color: black;
 }
 .navbutton:hover {
     background-color: #00FF33;
     color: black;
 }
-.navbutton span {
-    position: relative;
-    top: 30%;
-}
 /*Main Content Classes*/
 .content {
-    margin-top: 10em;
+    margin-top: 18em;
     padding: 0 1em;
 }
 .container {
@@ -155,9 +170,14 @@ td {
 }
 .text_box {
     width: 60vw;
+    padding: 0 1em;
+}
+.text_box p, h1 {
+    margin-bottom: 1em;
 }
 .image_box {
-    width: 30em;
+    width: 18vw;
+    height: auto;
 }
 .image_box p {
     font-style: italic;
