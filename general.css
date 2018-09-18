@@ -30,6 +30,9 @@ h1 {
 .bold {
     font-weight: bold;
 }
+.underlined {
+    text-decoration: underline;
+}
 .marginbottom {
     margin-bottom: 1em;
 }
@@ -46,7 +49,7 @@ h1 {
     width: 100%;
 }
 .de_rede {
-    width: 30vw;
+    width: 100%;
     height: auto;
 }
 .memes {
@@ -105,7 +108,6 @@ td {
     text-align: left;
     padding-left: 13em;
 }
-/*Classes*/
 /*Navbar*/
 .navbar {
     overflow: hidden;
@@ -157,8 +159,10 @@ td {
     margin-top: 18em;
     padding: 0 1em;
 }
+.content p, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1em;
+}
 .container {
-    margin-top: 2em;
     display: flex;
     justify-content: space-around;
 }
@@ -171,8 +175,9 @@ td {
 .text_box {
     width: 60vw;
     padding: 0 1em;
+    margin: 0 auto;
 }
-.text_box p, h1 {
+.text_box p, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1em;
 }
 .image_box {
@@ -190,6 +195,7 @@ td {
     width: 3.5em;
     margin-left: auto;
     margin-right: auto;
+    background-color: black;
 }
 .sitemap:hover {
     color: red;
