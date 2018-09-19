@@ -188,6 +188,10 @@ td {
     font-style: italic;
     margin-bottom: 1em;
 }
+.anchor {
+    padding-top: 180px;
+    margin-top: -180px;
+}
 /*Sitemap*/
 .sitemap {
     position: fixed;
