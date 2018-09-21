@@ -7,11 +7,25 @@
     <meta name="description" content="My Portfolio site">
     <meta name="keywords" content="Awesome, Amazing, Stunning">
     <meta name="author" content="Julien Kenneth Pleijte">
-    <link rel="shortcut icon" href="./images/admech_logo.ico"/>
-    <link rel="stylesheet" type="text/css" href="./reset.css">
-    <link rel="stylesheet" type="text/css" href="./general.css">
+    <link rel="shortcut icon" href="./assets/images/admech_logo.ico"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/general.css">
 </head>
 <body>
+    <!--Mobile dropdown menu-->
+    <section class="hamburger_button" onclick="menu();">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <!--Mobile navbar-->
+    <section class="mobile_navbar" id="dropdown">
+        <div class="mobile_navbutton_active">Home</div>
+        <a href="profile.html"><div class="mobile_navbutton">About me</div></a>
+        <a href="dashboard.html"><div class="mobile_navbutton">Dashboard</div></a>
+        <a href="motivatie.html"><div class="mobile_navbutton">Motivatie</div></a>
+    </section>
+    <!--Desktop navbar-->
     <div class="navbar">
         <div class="navcontainer">
             <a href="index.html"><div class="navbutton"><span>Home</span></div></a>
@@ -58,13 +72,14 @@
                 <p></p>
             </main>
             <div class="image_box">
-                <a href="https://www.instagram.com/julienmaster21/"><img class="captain" src="./images/terminator_captain.jpg" alt="My miniature model of a terminator captain."/></a>
+                <a href="https://www.instagram.com/julienmaster21/"><img class="captain" src="./assets/images/terminator_captain.jpg" alt="My miniature model of a terminator captain."/></a>
                 <p>Dit is een van mijn modellen die ik in elkaar heb gezet en geschilderd.</p>
-                <a href="./emperor.html"><img class="emperor" src="./images/emperor_of_mankind.jpg" alt="The Holy image of the Emperor of Mankind."/></a>
+                <a href="./emperor.html"><img class="emperor" src="./assets/images/emperor_of_mankind.jpg" alt="The Holy image of the Emperor of Mankind."/></a>
                 <p>Dit is de Emperor of Mankind. Hij is de leider van de Imperium of Man.</p>
             </div>
         </section>
     </div>
     <footer class="center"><a class="sitemap" href="sitemap.html">Sitemap</a></footer>
+    <script rel="javascript" src="./assets/javascript/general.js"></script>
 </body>
 </html>

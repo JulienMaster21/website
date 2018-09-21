@@ -36,6 +36,9 @@ h1 {
 .marginbottom {
     margin-bottom: 1em;
 }
+.link {
+    word-break: break-all;
+}
 .link:hover {
     color: red;
 }
@@ -77,7 +80,7 @@ table {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1em;
-    width: 80%;
+    width: 90vw;
     border-collapse: collapse;
     text-align: center;
 }
@@ -106,7 +109,7 @@ td {
 }
 .total {
     text-align: left;
-    padding-left: 13em;
+    padding-left: 14em;
 }
 /*Navbar*/
 .navbar {
@@ -216,4 +219,96 @@ td {
     80% {height: 80vh; width: 80vw;}
     90% {height: 90vh; width: 90vw;}
     100% {height: 100vh; width: 100vw;}
+}
+/*Mobile settings*/
+.mobile_navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 5em;
+    border: 2px dashed #00FF33;
+    background-color: black;
+    display: none;
+    width: 90vw;
+    margin-left: 5vw;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.mobile_navbar a {
+    text-decoration: none;
+}
+.mobile_navbutton {
+    height: 9vh;
+    width: 80vw;
+    margin-left: 5vw;
+    text-decoration: none;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobile_navbutton_active {
+    height: 9vh;
+    width: 80vw;
+    margin-left: 5vw;
+    text-decoration: none;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00FF33;
+    color: black;
+}
+.mobile_navbutton:hover {
+    background-color: #00FF33;
+    color: black;
+}
+@media screen and (max-width: 30em) {
+    table {
+        width: 20em;
+    }
+    .content {
+        margin-top: 6em;
+    }
+    .navbar {
+        display: none;
+    }
+    .hamburger_button {
+        position: fixed;
+        background-color: black;
+        left: 1em;
+        top: 1em;
+        width: 5em;
+        border: 2px dashed #00FF33;
+    }
+    .hamburger_button:hover {
+        background-color: #00FF33;
+        border: 2px solid black;
+    }
+    .hamburger_button div {
+        width: 3em;
+        height: 0.5em;
+        background-color: #00FF33;
+        margin: 0.5em auto;
+    }
+    .hamburger_button:hover div {
+        background-color: black;
+    }
+    .container {
+        display: initial;
+    }
+    .text_box {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .image_box {
+        width: 100%;
+    }
+    .sitemap {
+        display: none;
+    }
+    .anchor {
+        padding-top: 4em;
+        margin-top: -4em;
+    }
 }
