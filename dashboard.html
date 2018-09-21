@@ -36,7 +36,7 @@
     </div>
     <div class="content">
         <h1 class="center">Studiemonitor</h1>
-        <table>
+        <table class="monitor">
             <tbody>
                 <tr>
                     <th>Cursus</th>
@@ -45,8 +45,8 @@
                     <th>Cijfer</th>
                     <th>EC's</th>
                 </tr>
-                <tr>
-                    <td class="blok_inprogress" colspan="5">Blok 1</td>
+                <tr class="blok inprogress">
+                    <td colspan="5">Blok 1</td>
                 </tr>
                 <tr>
                     <td>Computer Science Basics</td>
@@ -69,8 +69,8 @@
                     <td>N.A.</td>
                     <td>5</td>
                 </tr>
-                <tr>
-                    <td class="blok" colspan="5">Blok 2</td>
+                <tr class="blok">
+                    <td colspan="5">Blok 2</td>
                 </tr>
                 <tr>
                     <td rowspan="2">Object-Oriented Programming</td>
@@ -111,8 +111,8 @@
                     <td>N.A.</td>
                     <td>2.5</td>
                 </tr>
-                <tr>
-                    <td class="blok" colspan="5">Blok 3</td>
+                <tr class="blok">
+                    <td colspan="5">Blok 3</td>
                 </tr>
                 <tr>
                     <td>Framework Development 1</td>
@@ -148,8 +148,8 @@
                     <td>N.A.</td>
                     <td>2.5</td>
                 </tr>
-                <tr>
-                    <td class="blok" colspan="5">Blok 4</td>
+                <tr class="blok">
+                    <td colspan="5">Blok 4</td>
                 </tr>
                 <tr>
                     <td>Framework Development 2</td>
@@ -185,12 +185,14 @@
                     <td>N.A.</td>
                     <td>2.5</td>
                 </tr>
-                <tr>
-                    <td class="total" colspan="4">Totaal</td>
+                <tr class="inprogress">
+                    <td>Totaal</td>
+                    <td colspan="3"></td>
                     <td>0/60</td>
                 </tr>
             </tbody>
         </table>
+        <p class="center">15 EC's per blok en minimaal 45 EC's totaal.</p>
         <h1 class="center">Studiewijzer</h1>
         <ul>
             <li><a href="https://hz.nl/uploads/documents/Regelingen/NL/Onderwijs-examenregelingen/OER-HZ-2018-2019docv2018-06-26DEFCvB-V-01.pdf" class="link">Het Onderwijs en Examenregelement</a></li>

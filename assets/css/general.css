@@ -76,40 +76,42 @@ ol {
     list-style: decimal;
 }
 /*Tables*/
-table {
+.languages {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 40vw;
+    margin-bottom: 1em;
+}
+.monitor {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1em;
     width: 90vw;
-    border-collapse: collapse;
+    border-collapse: separate;
     text-align: center;
+    overflow: scroll;
 }
 th {
-    border: 4px solid #00FF33;
+    border: 2px solid #00FF33;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 td {
-    border: 2px solid #00FF33;
+    border: 1px solid #00FF33;
     font-family: 'Courier New', Courier, monospace;
 }
-.blok {
+.blok td {
     background-color: #00FF33;
     color: black;
     font-weight: bold;
 }
-.blok_inprogress {
+.inprogress td {
     background-color: cyan;
     color: black;
     font-weight: bold;
 }
-.blok_failed {
+.failed td {
     background-color: red;
     color: #00FF33;
-    font-weight: bold;
-}
-.total {
-    text-align: left;
-    padding-left: 14em;
 }
 /*Navbar*/
 .navbar {
@@ -263,8 +265,11 @@ td {
     color: black;
 }
 @media screen and (max-width: 30em) {
-    table {
-        width: 20em;
+    .languages {
+        width: 90vw;
+    }
+    .monitor {
+        display: flex;
     }
     .content {
         margin-top: 6em;
