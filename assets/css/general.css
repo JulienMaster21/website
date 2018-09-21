@@ -79,8 +79,9 @@ ol {
 .languages {
     margin-left: auto;
     margin-right: auto; 
-    width: 40vw;
+    width: 60vw;
     margin-bottom: 1em;
+    text-align: center;
 }
 .monitor {
     margin-left: auto;
