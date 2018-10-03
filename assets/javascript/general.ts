@@ -7,3 +7,11 @@ function menu() {
     document.getElementById("dropdown").style.display = "initial";
     }
 }
+document.addEventListener('keydown', function(event) {
+    if(event.keyCode == 88) {
+        alert("JASON.json: JASON!");
+    }
+    else if(event.keyCode == 70) {
+        alert("You paid respect.");
+    }
+});
