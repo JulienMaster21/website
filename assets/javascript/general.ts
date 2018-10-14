@@ -9,7 +9,7 @@ function menu() {
 }
 document.addEventListener('keydown', function(event) {
     if(event.keyCode == 88) {
-        alert("JASON.json: JASON!");
+        alert("JASON! = {JASON! : \"JASON!\"}");
     }
     else if(event.keyCode == 70) {
         alert("You paid respect.");

@@ -43,17 +43,16 @@ h1 {
     color: red;
 }
 /*Images*/
-.captain {
+.image {
     width: 100%;
     height: auto;
 }
-.emperor {
-    height: auto;
-    width: 100%;
-}
-.de_rede {
-    width: 100%;
-    height: auto;
+.imageberoep {
+    width: 60vw;
+    height: 50em;
+    margin: 0 auto 0.5em auto;
+    display: block;
+    z-index: -1;
 }
 .memes {
     dankness: maximum;
@@ -64,6 +63,19 @@ h1 {
 .emperormeme {
     animation: grow 10s;
     animation-fill-mode: forwards;
+}
+.rotate90 {
+    transform: rotate(90deg);
+    width: 95em;
+    height: 60vw;
+}
+.rotate180 {
+    transform: rotate(180deg);
+}
+.rotate270 {
+    transform: rotate(270deg);
+    width: 95em;
+    height: 60vw;
 }
 /*Lists*/
 ul, ol {
@@ -123,6 +135,7 @@ td {
     margin: 0.5% 2.5%;
     border: 2px dashed #00FF33;
     background-color: black;
+    z-index: 10;
 }
 .navbar a {
     text-decoration: none;
@@ -162,21 +175,22 @@ td {
 }
 /*Main Content Classes*/
 .content {
+    margin: 0 1em;
     margin-top: 18em;
-    padding: 0 1em;
 }
-.content p, h1, h2, h3, h4, h5, h6 {
+.content p, h1, h2, h3, h4, h5, h6, img {
     margin-bottom: 1em;
 }
 .container {
     display: flex;
     justify-content: space-around;
+    width: 98vw;
 }
 .flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center
+    align-items: center;
 }
 .text_box {
     width: 60vw;
@@ -187,12 +201,15 @@ td {
     margin-bottom: 1em;
 }
 .image_box {
-    width: 18vw;
+    width: 20vw;
     height: auto;
 }
 .image_box p {
     font-style: italic;
     margin-bottom: 1em;
+}
+.list_box {
+    width: 20vw;
 }
 .anchor {
     padding-top: 180px;
@@ -235,6 +252,7 @@ td {
     margin-left: 5vw;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+    z-index: 10;
 }
 .mobile_navbar a {
     text-decoration: none;
@@ -265,7 +283,7 @@ td {
     background-color: #00FF33;
     color: black;
 }
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 1007px) {
     .languages {
         width: 90vw;
     }
@@ -299,16 +317,20 @@ td {
     .hamburger_button:hover div {
         background-color: black;
     }
-    .container {
+    .container{
         display: initial;
     }
+    .container div, h1 {
+        padding: 0 1em;
+    }
     .text_box {
-        width: 100%;
-        margin: 0 auto;
-        padding: 0;
+        width: 100vw;
     }
     .image_box {
-        width: 100%;
+        width: 100vw;
+    }
+    .list_box {
+        width: 100vw;
     }
     .sitemap {
         display: none;
